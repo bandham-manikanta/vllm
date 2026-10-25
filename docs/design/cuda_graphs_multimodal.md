@@ -23,6 +23,8 @@ For two-tower vision encoders (e.g., DeepSeek-OCR's SAM + CLIP with dynamic tili
 | `KimiK25ForConditionalGeneration` | `Kimi-K2.5, Kimi-K2.6` | ✅︎ | ❌︎ | ❌︎ |
 | `KimiK3ForConditionalGeneration` | `Kimi-K3` | ✅︎ | ❌︎ | ❌︎ |
 | `Llama4ForConditionalGeneration` | `Llama 4` | ✅︎ | ❌︎ | ❌︎ |
+| `Mistral3ForConditionalGeneration` | `Mistral 3` | ✅︎ | ❌︎ | ❌︎ |
+| `PixtralForConditionalGeneration` | `Pixtral`, Mistral-format `Mistral 3` | ✅︎ | ❌︎ | ❌︎ |
 | `Qwen2VLForConditionalGeneration` | `Qwen2-VL` | ✅︎ | ✅︎ | ❌︎ |
 | `Qwen2_5_VLForConditionalGeneration` | `Qwen2.5-VL` | ✅︎ | ✅︎ | ❌︎ |
 | `Qwen3VLForConditionalGeneration` | `Qwen3-VL` | ✅︎ | ✅︎ | ❌︎ |
@@ -31,6 +33,27 @@ For two-tower vision encoders (e.g., DeepSeek-OCR's SAM + CLIP with dynamic tili
 | `Step3VLForConditionalGeneration` | `Step3-VL` | ✅︎ | ❌︎ | ✅︎ |
 | `MiniCPMV` | `MiniCPMV2.5` | ✅︎ | ❌︎ | ❌︎ |
 | `MiniCPMV` | `MiniCPMV2.6`, `MiniCPMV4.0` | ✅︎ | ✅︎ | ❌︎ |
+
+### Model x Hardware
+
+| Architecture | NV Blackwell | NV Ampere | AMD MI300X | AMD MI350X / MI355X |
+| ------------ | ---------------- | ------------- | -------------- | --------------------- |
+| `DeepseekOCRForCausalLM` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Ernie4_5_VLMoeForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Gemma3ForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Glm4vForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Gemma4ForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `InternVLChatModel` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `KimiVLForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Llama4ForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Mistral3ForConditionalGeneration` | ❔ | ❔ | ❔ | ❔ |
+| `PixtralForConditionalGeneration` | ❔ | ❔ | ❔ | ❔ |
+| `Qwen2VLForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Qwen2_5_VLForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Qwen3VLForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Qwen3_5ForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Qwen3_5MoeForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
+| `Step3VLForConditionalGeneration` | ✅︎ | ✅︎ | ❔ | ✅︎ |
 
 !!! note
     Encoder CUDA Graph has currently been tested with `--mm-encoder-attn-backend=FLASH_ATTN` and `--mm-encoder-attn-backend=FLASHINFER` on Blackwell GPUs.
